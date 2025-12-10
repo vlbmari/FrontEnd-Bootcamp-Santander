@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+            box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+            border: solid 1px gray;
+        }
+
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+
+        table tbody tr:hover td {
+            background-color: #E9E9E9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table summary="Resumo sobre a tabela (acessibilidade)" border="1" width="250" cellspacing="15" cellpadding="15">
+    <caption>Nome dado para a tabela</caption>
+    <thead>
+        <tr>
+            <td colspan="2">Minha Tabela</td>
+        </tr>
+        <tr>
+            <th title="nome completo">Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Marcel</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Mari</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Patricia</td>
+            <td>40</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>3</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>

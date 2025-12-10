@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+  </head>
+  <body>
+    <h1>Exemplos de links</h1>
+
+    <a href=""></a>
+    <img title="logotipo" alt="descricao logo" src="" alt="" />
+    <svg src=""></svg>
+
+    <video controls>
+        <source src="clipe1.mp4"></source>   
+        <source src="clipe1.webm"></source>   
+        <track src="legenda.vtt" kind="captions" srclang="en"></track>
+        <track default src="legenda.vtt" kind="captions" srclang="pt-BR"></track>
+        Seu navegador n tem suporte para video
+    <!-- encadeaamento de recursos, se o navegador nao tiver suporte para mp4, tenta webm, se nao, aparece a mensagem abaixo. -->
+    </video>
+
+
+    <audio autoplay controls >
+        <source src="">
+        Seu navegador n tem suporte para audio
+    </audio>
+
+    <!-- Embed é utilizado para incorporar midias externas, como videos do youtube,
+    arquivos pdf, etc., mas não é muito utilizado atualmente, sendo mais comum o
+    uso de iframes para esse fim, devido a sua semantica ruim. -->
+    <embed src="" type="" /><br>
+    <!-- Para pegar um link do youtube por exemplo, vc vai em compartilhar>incorporar>copiar iframe gerado automaticamente. -->
+    <iframe width="500" height="400" src="https://mahzy.com" frameborder="0"></iframe>
+
+    <!-- SEMANTICA: É uma boa pratica utilizar figure para englobar o conteudo de imagem, videos, etc., e figcaption para descrever o conteudo da midia. -->
+    <figure>
+      <img src="car-medium.jpg" width="250" />
+      <figcaption>Descrição do veículo</figcaption>
+    </figure>
+    
+
+    <!-- Picture é utilizado para definir imagens responsivas, ou seja, que se adaptam ao tamanho da tela do usuario. -->
+    <picture>
+      <source media="min-width(600px)" srcset="car-large.jpg" />
+      <img src="car-medium.jpg" width="250" />
+    </picture>
+
+
+  </body>
+</html>

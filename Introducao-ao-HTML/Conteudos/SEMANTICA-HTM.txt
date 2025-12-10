@@ -1,0 +1,23 @@
+W3C: Html 5 é mais semantico , ajudando na acessibilidade.
+
+-acessibilidade WAI-
+
+-web scraping-
+
+-SEO-
+
+
+-------------------
+
+Header //Cabeçalho
+main //Conteudo principal (nao pode ter mais de 1 main na pagina, e ela é sempre pai das outras tags, nao o contrario)
+footer //Rodapé
+
+section // sessão da pagina que tem relação com seu conteudo //
+aside // sessão da pagina que tem relação com seu entorno, mas não totalmente relevante ao assunto principal da pagina
+nav //tag para colocar navegações do site, links e etc - ex: menu de navegacao
+article // artigo, quando um article esta dentro de outro, semanticamente o html ja entende que o article "filho" tem relacao com o article "pai"
+time //para datas e horas
+
+figure 
+figure

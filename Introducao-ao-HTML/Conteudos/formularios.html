@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Cadastro de Curriculo</legend>
+        <form name="signup" autocomplete="on" onsubmit="alert('Enviei formulário');" method="POST" action="#">
+            Nome *: <input type="text" name="name" /><br>
+            Idade *: <input type="number" name="age" /><br>
+            Senha *: <input type="password" name="password" /><br>
+            Curso *: <select multiple name="role" id="">
+                <option selected value="">Selecione seu curso</option>
+                <option value="ES">Engenharia de Software</option>
+                <option value="CD">Cientista de dados</option>
+                <option value="SI">Sistemas da Informação</option>
+                <option value="EC">Engenharia da Computação</option>
+            </select>
+            <br>
+            Sobre: <textarea name="message" id="">Fale sobre você</textarea>
+
+            <button type="submit">Enviar</button>
+    </fieldset>
+    <!-- Obs: O onsubmit é melhor sendo enviado no form, pois assim, é possivel validar todos os campos antes de enviar. Já se estiver no button, só valida aquele botão.
+    O autocomplete ajuda o navegador a lembrar dos dados já preenchidos, mas em alguns casos, como senhas, é melhor deixar off.
+    O atributo desabled tende a ser perigoso em senhas, pois ao inspecionar o elemento, o usuario pode ativar o campo e colocar a senha, deve ser feito uma validação no backend.
+    O atributo required obriga o usuario a preencher o campo antes de enviar o formulario.
+    o atrubuto multiple permite selecionar mais de uma opção no select, apertando no teclado ctrl. -->
+    </form>
+</body>
+</html>
