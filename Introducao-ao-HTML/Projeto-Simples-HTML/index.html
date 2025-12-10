@@ -6,27 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="introducao-ao-html">
     <title>Introdução ao HTML/CSS & JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+        }
+        a{
+            color: rgb(19, 28, 105);
+            text-decoration: none;
+        }
+        sup{
+            color: rgb(0, 225, 255);
+            font-family: 'Gill Sans';
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>RESUMO HTML</h1>
+        <hr/>
         <nav>
             <ul>
-                <li><a href="Introducao-ao-HTML/button-e-seus-tipos.html">Button e Seus Tipos</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#tags-atributos">Tags & Atributos</a></li>
+                <li><a href="#textos">Textos</a></li>
+                <li><a href="#button">Button e Seus Tipos</a></li>
+                <li><a href="#checkbox-radio">CheckBox & Radio</a></li>
+                <li><a href="#div-span">Div & Span</a></li>
+                <li><a href="#formularios">Formulários</a></li>
+                <li><a href="#links-midia">Links & Mídia</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#tabelas"></a></li>
+                <li><a href="#input">Tipos Input</a></li>
+                <li><a href="#cores">Cores</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <section id="tags-atributos">
+            <h2>Tags & Atributos</h2>
+            <p>Tags são os blocos de construção do HTML que definem elementos, enquanto atributos fornecem informações ou configurações adicionais para essas tags.</p>
+            <a href="https://www.w3schools.com/html/html_attributes.asp" target="_blank"><small>Saiba Mais <sup>W3Schools</sup> </small></a>
+        </section>
+        <section id="textos">
+            <h2>Textos</h2>
+            <p>Existem diversas tags para formatação e estrutura de texto, como h1 a h6 para títulos hierárquicos e p para parágrafos de conteúdo.</p>
+            <a href="https://www.w3schools.com/html/html_formatting.asp" target="_blank"><small>Saiba Mais <sup>W3Schools</sup> </small></a>
+        </section>
+        <section id="button">
+            <h2>Tipos Button</h2>
+            <p>Os botões permitem interação do usuário e podem ser do tipo submit (enviar formulário), reset (limpar campos) ou button (ação genérica via script).</p>
+            <a href="https://www.w3schools.com/tags/tag_button.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>
+        <section id="checkbox-radio">
+            <h2>CheckBox & Radio</h2>
+            <p>O input Checkbox permite selecionar múltiplas opções de uma lista, enquanto o Radio permite selecionar apenas uma opção única de um grupo.</p>
+            <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>
+        <section id="div-span">
+            <h2>Div & Span</h2>
+            <p>A Div é um container de bloco usado para agrupar elementos maiores, e o Span é um container de linha usado para estilizar partes específicas de um texto.</p>
+            <a href="https://www.w3schools.com/html/html_div.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>
+        <section id="formularios">
+            <h2>Formularios</h2>
+            <p>A tag form cria uma seção interativa que agrupa elementos de entrada para coletar dados do usuário e enviá-los a um servidor.</p>
+            <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>
+        <section id="links-midia">
+            <h2>Links & Midia</h2>
+            <p>A tag 'a' cria hiperlinks para navegação entre páginas, enquanto tags como img, audio e video são usadas para incorporar mídia rica ao documento.</p>
+            <a href="https://www.w3schools.com/html/html_links.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>
+        <section id="listas">
+            <h2>Listas Ordenadas & Não Ordenadas</h2>
+            <p>Listas organizam itens de forma estruturada, podendo ser ordenadas (ol) com numeração ou não ordenadas (ul) com marcadores.</p>
+            <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>
+        <section id="tabelas">
+            <h2>Tabelas</h2>
+            <p>Tabelas organizam dados em linhas e colunas, utilizando a tag table em conjunto com tr (linhas), th (cabeçalhos) e td (células de dados).</p>
+            <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>
+        <section id="input">
+            <h2>Tipos Input</h2>
+            <p>O elemento input é versátil e possui vários tipos como text, password, email, number e date para receber diferentes formatos de dados do usuário.</p>
+            <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>  
+        <section id="cores">
+            <h2>Cores</h2>
+            <p>Cores podem ser aplicadas a elementos HTML via CSS utilizando nomes de cores, códigos hexadecimais, valores RGB ou HSL.</p>
+            <a href="https://www.w3schools.com/html/html_colors.asp" target="_blank"><small>Saiba Mais <sup>w3Schools</sup> </small></a>
+        </section>      
     </main>
     <footer>
 
