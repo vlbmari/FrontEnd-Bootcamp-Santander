@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WIKI Plus</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe I", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .sidebar {
+        border-right: #ccc 1px solid;
+      }
+
+      .main-content {
+        flex: 1;
+        padding: 10px;
+      }
+
+      .anchors {
+        border-left: #ccc 1px solid;
+        padding-left: 15px;
+      }
+
+      .container {
+        max-width: 1440px;
+        margin: auto;
+        grid-gap: 3rem;
+        display: grid;
+        grid-template-areas: "sidebar main-content anchors";
+        grid-temprate-columns: minmax(0, 15rem) minmax(0, 2fr) minmax(0, 15rem);
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .bar {
+        border-top: #ccc 1px solid;
+        border-bottom: #ccc 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img src="" alt="Logo da WIKI Plus" />
+        <figcaption>WIKI Plus - Sua fonte de conhecimento sobre</figcaption>
+      </figure>
+    </header>
+    <main>
+      <div class="bar"></div>
+      <div class="container">
+        <div class="sidebar">
+          <nav>
+            <h3>Hardware Essencial</h3>
+            <ul>
+              <li><a href="#cpu">Processador (CPU)</a></li>
+              <li><a href="#gpu">Placa de Vídeo (GPU)</a></li>
+              <li><a href="#placa-mae">Placa Mãe</a></li>
+              <li><a href="#memoria-ram">Memória RAM</a></li>
+              <li>
+                <a href="#armazenamento">Armazenamento</a>
+                <ul>
+                  <li><a href="#ssd">SSD</a></li>
+                  <li><a href="#hd">HD</a></li>
+                </ul>
+              </li>
+              <li><a href="#psu">Fonte de Alimentação (PSU)</a></li>
+            </ul>
+
+            <h3>Estrutura e Refrigeração</h3>
+            <ul>
+              <li><a href="#gabinete">Gabinete</a></li>
+              <li>
+                <a href="#cooler">Cooler do Processador</a>
+                <ul>
+                  <li><a href="#aircooler">Air Cooler</a></li>
+                  <li><a href="#watercoler">Water Cooler</a></li>
+                </ul>
+              </li>
+              <li><a href="#fans">Fans (Ventoinhas)</a></li>
+            </ul>
+
+            <h3>Periféricos Básicos</h3>
+            <ul>
+              <li><a href="#monitor">Monitor</a></li>
+              <li><a href="#teclado">Teclado</a></li>
+              <li><a href="#mouse">Mouse</a></li>
+              <li><a href="#headset">HeadSet</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-content">
+          <article>
+            <h1>Componentes Essenciais de um Computador</h1>
+            <section id="cpu">
+              <h2>Processador (CPU)</h2>
+              <p>
+                Em computação e ciência da computação, um processador ou unidade
+                de processamento é um componente elétrico (circuito digital) que
+                executa operações em uma fonte de dados externa, geralmente
+                memória ou algum outro fluxo de dados. Ele normalmente assume a
+                forma de um microprocessador, que pode ser implementado em um
+                único chip de circuito integrado de metal-óxido-semicondutor. No
+                passado, os processadores eram construídos usando múltiplos
+                tubos de vácuo individuais, vários transistores individuais, ou
+                vários circuitos integrados. Hoje, os processadores usam
+                transistores embutidos.
+              </p>
+            </section>
+            <section id="gpu">
+              <h2>Placa de Vídeo (GPU)</h2>
+              <p>
+                A placa de vídeo, ou GPU (Graphics Processing Unit), é
+                responsável pelo processamento gráfico. Ela é essencial para
+                jogos, edição de vídeo e outras tarefas que exigem alto
+                desempenho gráfico.
+              </p>
+            </section>
+            <section id="placa-mae">
+              <h2>Placa Mãe</h2>
+              <p>
+                A placa mãe é a espinha dorsal do computador, conectando todos
+                os componentes essenciais. Ela permite a comunicação entre o
+                CPU, GPU, memória e outros dispositivos.
+              </p>
+            </section>
+            <!-- Additional sections for other components would go here -->
+          </article>
+        </div>
+        <div class="anchors">
+          <h2>Neste artigo</h2>
+          <a href="#">links</a>
+        </div>
+      </div>
+      <div class="bar"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
