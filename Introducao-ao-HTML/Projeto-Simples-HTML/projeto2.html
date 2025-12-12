@@ -37,7 +37,7 @@
         grid-gap: 3rem;
         display: grid;
         grid-template-areas: "sidebar main-content anchors";
-        grid-temprate-columns: minmax(0, 15rem) minmax(0, 2fr) minmax(0, 15rem);
+        grid-template-columns: minmax(0, 15rem) minmax(0, 2fr) minmax(0, 15rem);
         padding-left: 1rem;
         padding-right: 1rem;
       }
@@ -46,13 +46,29 @@
         border-top: #ccc 1px solid;
         border-bottom: #ccc 1px solid;
       }
+
+      header figure {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 1rem;
+        justify-content: space-between;
+      }
+
+      header figcaption {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+      }
     </style>
   </head>
   <body>
     <header>
       <figure>
-        <img src="" alt="Logo da WIKI Plus" />
-        <figcaption>WIKI Plus - Sua fonte de conhecimento sobre</figcaption>
+        <img src="" alt="Logo da Hardware WIKI" />
+        <figcaption>
+          Hardware WIKI - Sua fonte de conhecimento básica sobre computadores
+        </figcaption>
       </figure>
     </header>
     <main>
@@ -68,10 +84,6 @@
               <li><a href="#memoria-ram">Memória RAM</a></li>
               <li>
                 <a href="#armazenamento">Armazenamento</a>
-                <ul>
-                  <li><a href="#ssd">SSD</a></li>
-                  <li><a href="#hd">HD</a></li>
-                </ul>
               </li>
               <li><a href="#psu">Fonte de Alimentação (PSU)</a></li>
             </ul>
@@ -81,10 +93,6 @@
               <li><a href="#gabinete">Gabinete</a></li>
               <li>
                 <a href="#cooler">Cooler do Processador</a>
-                <ul>
-                  <li><a href="#aircooler">Air Cooler</a></li>
-                  <li><a href="#watercoler">Water Cooler</a></li>
-                </ul>
               </li>
               <li><a href="#fans">Fans (Ventoinhas)</a></li>
             </ul>
@@ -115,6 +123,12 @@
                 vários circuitos integrados. Hoje, os processadores usam
                 transistores embutidos.
               </p>
+              <h3>Curiosidade</h3>
+              <p>
+                A Lei de Moore, observada por Gordon Moore em 1965, previa que o
+                número de transistores em um chip dobraria a cada dois anos,
+                impulsionando a evolução rápida da computação.
+              </p>
             </section>
             <section id="gpu">
               <h2>Placa de Vídeo (GPU)</h2>
@@ -124,6 +138,12 @@
                 jogos, edição de vídeo e outras tarefas que exigem alto
                 desempenho gráfico.
               </p>
+              <h3>Curiosidade</h3>
+              <p>
+                Embora criadas para gráficos, as GPUs modernas são extremamente
+                eficientes em cálculos matemáticos paralelos, sendo a base para
+                o treinamento de Inteligência Artificial hoje em dia.
+              </p>
             </section>
             <section id="placa-mae">
               <h2>Placa Mãe</h2>
@@ -132,17 +152,203 @@
                 os componentes essenciais. Ela permite a comunicação entre o
                 CPU, GPU, memória e outros dispositivos.
               </p>
+              <h3>Curiosidade</h3>
+              <p>
+                O termo "placa-mãe" (Motherboard) é usado porque ela age como
+                uma "mãe" para os outros componentes, que são acoplados a ela
+                (filhos/daughterboards) para funcionar.
+              </p>
             </section>
-            <!-- Additional sections for other components would go here -->
+            <section id="memoria-ram">
+              <h2>Memória RAM</h2>
+              <p>
+                A Memória de Acesso Aleatório (RAM) armazena temporariamente os
+                dados que o processador precisa acessar imediatamente. É uma
+                memória volátil, ou seja, esvazia quando o PC é desligado.
+              </p>
+              <h3>Curiosidade</h3>
+              <p>
+                A sigla DDR (como em DDR4, DDR5) significa "Double Data Rate",
+                indicando que a memória pode transferir dados duas vezes por
+                ciclo de clock.
+              </p>
+            </section>
+            <section id="armazenamento">
+              <h2>Armazenamento</h2>
+              <p>
+                Dispositivos responsáveis por guardar seus arquivos e o sistema
+                operacional permanentemente.
+              </p>
+              <div id="ssd">
+                <h3>SSD (Solid State Drive)</h3>
+                <p>
+                  Usa memória flash para armazenar dados. É muito mais rápido e
+                  resistente que um HD.
+                </p>
+                <h4>Curiosidade</h4>
+                <p>
+                  Por não ter partes móveis, um SSD é totalmente silencioso e
+                  consome menos energia.
+                </p>
+              </div>
+              <div id="hd">
+                <h3>HD (Hard Disk)</h3>
+                <p>
+                  Usa discos magnéticos giratórios. É mais lento, mas oferece
+                  maior capacidade por um custo menor.
+                </p>
+                <h4>Curiosidade</h4>
+                <p>
+                  Os pratos de um HD de alto desempenho giram a 7200 rotações
+                  por minuto (RPM), enquanto a agulha de leitura flutua a uma
+                  distância microscópica da superfície.
+                </p>
+              </div>
+            </section>
+            <section id="psu">
+              <h2>Fonte de Alimentação (PSU)</h2>
+              <p>
+                Converte a energia da tomada para as voltagens que o computador
+                utiliza.
+              </p>
+              <h3>Curiosidade</h3>
+              <p>
+                A certificação "80 Plus" (White, Bronze, Gold, etc.) indica a
+                eficiência energética da fonte. Quanto melhor a certificação,
+                menos energia é desperdiçada em forma de calor.
+              </p>
+            </section>
+            <section id="gabinete">
+              <h2>Gabinete</h2>
+              <p>
+                A estrutura física que protege os componentes e organiza o fluxo
+                de ar.
+              </p>
+              <h3>Curiosidade</h3>
+              <p>
+                Gabinetes modernos focam muito em "cable management"
+                (gerenciamento de cabos), escondendo a fiação para melhorar
+                tanto a estética quanto a circulação de ar.
+              </p>
+            </section>
+            <section id="cooler">
+              <h2>Cooler do Processador</h2>
+              <p>
+                Sistema de refrigeração dedicado a manter a CPU em temperaturas
+                seguras.
+              </p>
+              <div id="aircooler">
+                <h3>Air Cooler</h3>
+                <p>Usa um dissipador de metal e ventoinhas.</p>
+              </div>
+              <div id="watercoler">
+                <h3>Water Cooler</h3>
+                <p>Usa um líquido refrigerante, bomba e radiador.</p>
+                <h4>Curiosidade</h4>
+                <p>
+                  A água destilada é a base da maioria dos fluidos de water
+                  cooler, pois a água pura não conduz eletricidade (embora
+                  impurezas e aditivos a tornem condutiva).
+                </p>
+              </div>
+            </section>
+            <section id="fans">
+              <h2>Fans (Ventoinhas)</h2>
+              <p>
+                Auxiliam na entrada de ar frio e saída de ar quente do gabinete.
+              </p>
+              <h3>Curiosidade</h3>
+              <p>
+                A pressão estática é uma medida importante para fans que
+                precisam empurrar ar através de obstáculos, como radiadores ou
+                filtros de poeira.
+              </p>
+            </section>
+            <section id="perifericos">
+              <h2>Periféricos Básicos</h2>
+              <div id="monitor">
+                <h3>Monitor</h3>
+                <p>Exibe a imagem gerada pelo computador.</p>
+                <h4>Curiosidade</h4>
+                <p>
+                  A taxa de atualização (Hz) define quantas vezes a imagem é
+                  atualizada por segundo. Gamers preferem 144Hz ou mais para
+                  maior fluidez.
+                </p>
+              </div>
+              <div id="teclado">
+                <h3>Teclado</h3>
+                <p>Dispositivo de entrada de texto.</p>
+                <h4>Curiosidade</h4>
+                <p>
+                  Teclados mecânicos possuem interruptores (switches)
+                  individuais para cada tecla, oferecendo maior durabilidade e
+                  feedback tátil.
+                </p>
+              </div>
+              <div id="mouse">
+                <h3>Mouse</h3>
+                <p>Dispositivo apontador.</p>
+                <h4>Curiosidade</h4>
+                <p>
+                  O primeiro mouse foi inventado em 1964 por Douglas Engelbart e
+                  era feito de madeira.
+                </p>
+              </div>
+              <div id="headset">
+                <h3>Headset</h3>
+                <p>Fone de ouvido com microfone integrado.</p>
+                <h4>Curiosidade</h4>
+                <p>
+                  Muitos headsets simulam som Surround 7.1 virtualmente para
+                  ajudar a localizar a direção dos sons em jogos.
+                </p>
+              </div>
+            </section>
           </article>
         </div>
         <div class="anchors">
           <h2>Neste artigo</h2>
-          <a href="#">links</a>
+          <ul>
+            <li><a href="#cpu">Processador (CPU)</a></li>
+            <li><a href="#gpu">Placa de Vídeo (GPU)</a></li>
+            <li><a href="#placa-mae">Placa Mãe</a></li>
+            <li><a href="#memoria-ram">Memória RAM</a></li>
+            <li>
+              <a href="#armazenamento">Armazenamento</a>
+              <ul>
+                <li><a href="#ssd">SSD</a></li>
+                <li><a href="#hd">HD</a></li>
+              </ul>
+            </li>
+            <li><a href="#psu">Fonte de Alimentação</a></li>
+            <li><a href="#gabinete">Gabinete</a></li>
+            <li>
+              <a href="#cooler">Cooler</a>
+              <ul>
+                <li><a href="#aircooler">Air Cooler</a></li>
+                <li><a href="#watercoler">Water Cooler</a></li>
+              </ul>
+            </li>
+            <li><a href="#fans">Fans</a></li>
+            <li>
+              <a href="#perifericos">Periféricos</a>
+              <ul>
+                <li><a href="#monitor">Monitor</a></li>
+                <li><a href="#teclado">Teclado</a></li>
+                <li><a href="#mouse">Mouse</a></li>
+                <li><a href="#headset">Headset</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="bar"></div>
     </main>
-    <footer></footer>
+    <footer>
+      <p style="text-align: center; padding: 1rem">
+        &copy; 2025 Hardware WIKI.
+      </p>
+    </footer>
   </body>
 </html>
